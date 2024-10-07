@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog - Home</title>
+</head>
+<body>
+    <!-- Include Header -->
+    <%- include('partials/header'); %>
+
+    <div class="container">
+        <h2>All Blog Posts</h2>
+        <!-- Iterate through all blog posts here -->
+        <div class="post-list">
+            <% posts.forEach(function(post) { %>
+                <div class="post">
+                    <h3><%= post.title %></h3>
+                    <p><%= post.content.substring(0, 100) %>...</p>
+                    <a href="/view-post/<%= post._id %>">Read More</a>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
