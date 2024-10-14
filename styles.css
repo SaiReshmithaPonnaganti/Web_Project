@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebeded;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Page Styles */
+.blog-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.blog-post h2 {
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    color: #555;
+}
+
+/* New Post Form Styles */
+.new-post {
+    margin-bottom: 50px;
+}
+
+.new-post form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.new-post form input[type="text"],
+.new-post form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.new-post form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.new-post form button:hover {
+    background-color: #555;
+}
+
+/* Comment Section Styles */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

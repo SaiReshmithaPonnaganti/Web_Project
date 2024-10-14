@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Blog Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Blog</h1>
+        <nav>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <!-- Form to Add a New Blog Post -->
+        <section class="new-post">
+            <h2>Add a New Blog Post</h2>
+            <form id="newPostForm">
+                <label for="postTitle">Title:</label>
+                <input type="text" id="postTitle" required>
+
+                <label for="postContent">Content:</label>
+                <textarea id="postContent" rows="5" required></textarea>
+
+                <button type="submit">Add Post</button>
+            </form>
+        </section>
+
+        <!-- Section to Display Blog Posts -->
+        <section id="blogPosts"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
